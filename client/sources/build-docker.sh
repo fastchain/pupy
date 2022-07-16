@@ -57,7 +57,7 @@ done
 
 echo "[+] Install psutil"
 $PYTHON32 -m pip install --no-binary :all: psutil==4.3.1
-$PYTHON64 -m pip install --upgrade --no-binary :all: psutil
+$PYTHON64 -m pip install --upgrade --no-binary :all: psutil==4.3.1
 
 for PYTHON in $PYTHON32 $PYTHON64; do
     $PYTHON -m pip install -q --force pycparser==2.17
